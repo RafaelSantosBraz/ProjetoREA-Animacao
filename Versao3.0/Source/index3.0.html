@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>
+            Projeto REA 3.0
+        </title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style='position:absolute; top:0px; left:0px;'>
+            <canvas id="desenho" width="500" height="500" style="border:0px solid #c3c3c3;" onclick="pauseAnimacao();"></canvas>
+        </div>
+        <div id="repouso" width="100" height="100" style="position:absolute; top:150px; left:520px; border:0px solid #c3c3c3;">
+            <img id="carolzinha" src="/Versao3.0/Imagens/repouso.gif" width="202" height="360"></img>
+        </div>
+        <div id="controladores" width="200" height="100" style="position:absolute; top:520px; left:0px; border:0px solid #c3c3c3;">
+            <img src="/Versao3.0/Imagens/reboot.png" width="40" height="40" onclick="reiniciarAnimacao();"></img>
+            <img src="/Versao3.0/Imagens/avancar.png" width="40" height="40" onclick="avancarAnimacao();"></img>
+            <img src="/Versao3.0/Imagens/voltar.png" width="40" height="40" onclick="retrocederAnimacao();"></img>
+            <img id="botaoAudio" src="/Versao3.0/Imagens/audio.png" width="40" height="40" onclick="controleAudio();"></img>
+            <audio id="audio" src=""> </audio>
+        </div>
+        <div style='position:absolute; top:10px; left:460px;'>
+            <img id="balao" src="/Versao3.0/Imagens/balao.png" width="400" height="200" onclick="controleAudio();"></img>
+            <div id="texto" style='position:absolute; top:50px; left:20px; width:380px'> Olá!
+
+                Com essa animação vamos compreender o conceito de Área de regiões
+
+regulares, o que posteriormente nos auxiliará na compreensão do conceito de
+
+INTEGRAL.</div>
+        </div>
+        <script src="bib3.0.js"></script>
+    </body>
+
+</html>
